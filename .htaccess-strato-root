@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# Wenn die Anfrage nicht bereits auf /gp5_editor/website/ zeigt, umleiten
+RewriteCond %{REQUEST_URI} !^/gp5_editor/website/
+RewriteRule ^(.*)$ /gp5_editor/website/$1 [L]
