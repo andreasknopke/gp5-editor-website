@@ -27,7 +27,7 @@ export default function Download() {
               Neueste Version herunterladen
             </a>
             <p className="download-card-version">
-              Aktuelle Version: <strong>v1.1.0</strong> (Beta)
+              Aktuelle Version: <strong>v1.2.0</strong>
             </p>
             <div className="download-card-notice">
               <strong>⚠️ Hinweis:</strong> Der Installer ist nicht mit einem Code-Signing-Zertifikat signiert.

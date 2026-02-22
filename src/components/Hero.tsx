@@ -8,14 +8,14 @@ export default function Hero() {
         </h1>
         <p className="hero-description">
           Der <strong>GP5 VST Editor</strong> ist ein JUCE-basiertes VST3 Instrument, das
-          Guitar Pro Dateien (.gp3, .gp4, .gp5, .gp7, .gp8) direkt in deiner DAW lädt und
+          Guitar Pro Dateien (.gp3, .gp4, .gp5, .gp7, .gp8) und Power Tab Dateien (.ptb) direkt in deiner DAW lädt und
           als interaktive Tablatur anzeigt – mit realistischem MIDI Output für Gitarren-Sampler.
           Zusätzlich bietet er <strong>Audio-to-Tab Transkription</strong> über ein neuronales Netzwerk
           (BasicPitch) und umfassende Editierfunktionen.
         </p>
         <div className="hero-actions">
           <a href="#download" className="btn btn-primary">
-            ⬇ Download v1.1.0
+            ⬇ Download v1.2.0
           </a>
           <a
             href="https://github.com/andreasknopke/GP5-Plugin"
@@ -28,11 +28,11 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           <div className="stat">
-            <span className="stat-value">5</span>
+            <span className="stat-value">6</span>
             <span className="stat-label">GP Formate</span>
           </div>
           <div className="stat">
-            <span className="stat-value">11</span>
+            <span className="stat-value">12</span>
             <span className="stat-label">Releases</span>
           </div>
           <div className="stat">

@@ -17,7 +17,7 @@ const playerSteps = [
   {
     step: 4,
     title: "Guitar Pro Datei laden",
-    description: 'Klicke auf "Load GuitarPro File" im Plugin und wähle eine .gp3/.gp4/.gp5/.gp7/.gp8 Datei aus.',
+    description: 'Klicke auf "Load GuitarPro File" im Plugin und wähle eine .gp3/.gp4/.gp5/.gp7/.gp8 oder .ptb Datei aus.',
   },
   {
     step: 5,

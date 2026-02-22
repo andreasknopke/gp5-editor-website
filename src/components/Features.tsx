@@ -2,7 +2,12 @@ const playerFeatures = [
   {
     icon: "📂",
     title: "Mehrere Dateiformate",
-    description: "Unterstützt GP3, GP4, GP5, GP7 und GP8 Dateien – lade jede Guitar Pro Version direkt ins Plugin.",
+    description: "Unterstützt GP3, GP4, GP5, GP7, GP8 und Power Tab (.ptb) Dateien – lade Guitar Pro und Power Tab Dateien direkt ins Plugin.",
+  },
+  {
+    icon: "🔀",
+    title: "PTB zu GP5 Konverter",
+    description: "Lade Power Tab Dateien (.ptb) und exportiere sie als Guitar Pro 5 Format – mit voller Unterstützung für Bends, Slides, Harmonics und mehr.",
   },
   {
     icon: "🎵",

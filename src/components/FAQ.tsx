@@ -6,8 +6,8 @@ const faqs = [
     a: "Alle DAWs mit VST3 Support funktionieren. Cubase wird besonders empfohlen, da die Sidechain-Konfiguration für Audio-to-Tab dort am einfachsten ist. Reaper, Studio One, FL Studio und andere VST3-kompatible DAWs funktionieren ebenfalls.",
   },
   {
-    q: "Welche Guitar Pro Formate kann das Plugin laden?",
-    a: "Das Plugin unterstützt GP3, GP4, GP5, GP7 und GP8 Dateien. GP7/GP8 Dateien (.gp) werden über den eingebetteten GPIF XML-Container geparst.",
+    q: "Welche Dateiformate kann das Plugin laden?",
+    a: "Das Plugin unterstützt GP3, GP4, GP5, GP7, GP8 und Power Tab (.ptb) Dateien. GP7/GP8 Dateien (.gp) werden über den eingebetteten GPIF XML-Container geparst. Power Tab Dateien können geladen und als GP5 exportiert werden.",
   },
   {
     q: "Funktioniert das Plugin auf macOS oder Linux?",
