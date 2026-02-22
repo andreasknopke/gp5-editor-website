@@ -12,24 +12,59 @@
 }
 
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: #1a1a2e;
-  --bg-card-hover: #222240;
-  --bg-accent: #6366f1;
-  --bg-accent-hover: #818cf8;
-  --text-primary: #e8e8f0;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
-  --border: #2a2a3e;
-  --border-accent: #6366f1;
-  --gradient-start: #6366f1;
-  --gradient-end: #a855f7;
+  --bg-primary: #0f1115;
+  --bg-secondary: #151922;
+  --bg-card: #1b202b;
+  --bg-card-hover: #232a38;
+  --bg-accent: #b9823b;
+  --bg-accent-hover: #d1a15f;
+  --text-primary: #eceff3;
+  --text-secondary: #a4adbb;
+  --text-muted: #7d8696;
+  --border: #2a313f;
+  --border-accent: #b9823b;
+  --gradient-start: #b9823b;
+  --gradient-end: #b9823b;
   --success: #22c55e;
   --radius: 12px;
   --radius-sm: 8px;
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 8px 48px rgba(99, 102, 241, 0.15);
+  --shadow-lg: 0 8px 48px rgba(185, 130, 59, 0.15);
+}
+
+/* Theme presets (optional): set in DevTools on <html> as data-theme="..." */
+:root[data-theme='studio-green'] {
+  --bg-primary: #0f1412;
+  --bg-secondary: #151c19;
+  --bg-card: #1c2621;
+  --bg-card-hover: #243129;
+  --bg-accent: #6fa06f;
+  --bg-accent-hover: #89b989;
+  --text-primary: #ebf1ed;
+  --text-secondary: #a4b3a8;
+  --text-muted: #7d8f83;
+  --border: #2e3b33;
+  --border-accent: #6fa06f;
+  --gradient-start: #6fa06f;
+  --gradient-end: #6fa06f;
+  --shadow-lg: 0 8px 48px rgba(111, 160, 111, 0.16);
+}
+
+:root[data-theme='slate-mono'] {
+  --bg-primary: #101215;
+  --bg-secondary: #171b21;
+  --bg-card: #1e242d;
+  --bg-card-hover: #28303b;
+  --bg-accent: #8a949f;
+  --bg-accent-hover: #a5b0bc;
+  --text-primary: #edf0f4;
+  --text-secondary: #a8b0bc;
+  --text-muted: #808998;
+  --border: #303845;
+  --border-accent: #8a949f;
+  --gradient-start: #8a949f;
+  --gradient-end: #8a949f;
+  --shadow-lg: 0 8px 48px rgba(138, 148, 159, 0.16);
 }
 
 html {
@@ -52,7 +87,7 @@ a {
 }
 
 a:hover {
-  color: var(--gradient-end);
+  color: var(--bg-accent);
 }
 
 ul {
@@ -75,10 +110,7 @@ img {
   font-weight: 800;
   text-align: center;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
@@ -108,14 +140,15 @@ img {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: var(--bg-accent);
   color: white;
-  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 4px 16px rgba(185, 130, 59, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.5);
+  background: var(--bg-accent-hover);
+  box-shadow: 0 6px 24px rgba(185, 130, 59, 0.45);
   color: white;
 }
 
@@ -172,10 +205,7 @@ img {
 .logo-text {
   font-size: 1.3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 /* Hamburger */
@@ -242,7 +272,7 @@ img {
 .hero {
   padding: 10rem 0 5rem;
   text-align: center;
-  background: radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  background: rgba(185, 130, 59, 0.06);
 }
 
 .hero-inner {
@@ -267,10 +297,7 @@ img {
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #fff 0%, var(--bg-accent-hover) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .hero-description {
@@ -516,14 +543,14 @@ img {
 
 .download-card-primary {
   border-color: var(--border-accent);
-  background: linear-gradient(145deg, rgba(99, 102, 241, 0.08), var(--bg-card));
+  background: rgba(185, 130, 59, 0.08);
 }
 
 .download-card-badge {
   position: absolute;
   top: -12px;
   left: 24px;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: var(--bg-accent);
   color: white;
   padding: 0.25rem 1rem;
   border-radius: 999px;
@@ -682,7 +709,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  background: var(--bg-accent);
   color: white;
   display: flex;
   align-items: center;
@@ -705,7 +732,7 @@ img {
 }
 
 .sampler-tip {
-  background: linear-gradient(145deg, rgba(99, 102, 241, 0.08), var(--bg-card));
+  background: rgba(185, 130, 59, 0.08);
   border: 1px solid var(--border-accent);
   border-radius: var(--radius);
   padding: 1.75rem;
@@ -827,7 +854,7 @@ img {
 
 .community-card-primary {
   border-color: var(--border-accent);
-  background: linear-gradient(145deg, rgba(99, 102, 241, 0.1), var(--bg-card));
+  background: rgba(185, 130, 59, 0.1);
   grid-column: 1 / -1;
 }
 
